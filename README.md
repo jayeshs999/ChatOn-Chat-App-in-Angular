@@ -28,7 +28,7 @@ npm install firebase
 ng serve
 ```
 
-##Future Additions
+## Future Additions
 
  - Signin and signup using Google,Facebook etc.
  - Forgot password option and password recovery using email
