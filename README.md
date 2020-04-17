@@ -1,7 +1,7 @@
 # ChatOn-Chat App in Angular
  A chat app created using Angular and Firebase. The app also uses Bootstrap for styling. The data is stored in the Firebase real-time database. The app also uses Firebase authentication.
 
-##Features
+## Features
 
  - SignUp Page
  - Login Page
@@ -9,7 +9,7 @@
  - User registration using email 
  - Display of user status
 
-##Execution Instructions
+## Execution Instructions
 
  - Download the repository
  - Install NodeJS and AngularCLI
