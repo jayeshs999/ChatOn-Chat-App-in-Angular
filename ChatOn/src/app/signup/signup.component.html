@@ -1,0 +1,49 @@
+
+
+<div class="centered">
+    
+  <div *ngIf="!LoggedInUserID">
+    <div class="signUpCard">
+     <form #signupForm="ngForm">
+      <h1 >Sign Up</h1>
+
+      <div class="err" *ngIf="error">
+        {{error}} 
+    </div>
+
+      <label class="label">Username</label>
+      <input 
+        name="displayName"
+        placeholder="Enter username" 
+        [(ngModel)]="username" class="formInput"
+        maxlength="40" required/>
+  
+      <label class="label">Email</label>
+         <input 
+         type="email" name="email"
+         placeholder="Enter your email address" 
+         [(ngModel)]="email" class="formInput"
+         maxlength="60" required/>
+  
+      <label class="label">Password</label>
+        <input 
+          type="password" name="password"
+          placeholder="Choose a password" 
+          [(ngModel)]="password" class="formInput" 
+          required/>
+  
+     
+  
+        <button [disabled]="!signupForm.form.valid" 
+                type="submit" (click)="signUp()"
+                class="btn" id="btn-signUp">
+                Sign Up
+        </button>
+      </form>
+    </div>
+    </div>
+    <div *ngIf='LoggedInUserID'>
+      You are already logged in.Logout to signup  again.
+    </div>
+  
+</div>

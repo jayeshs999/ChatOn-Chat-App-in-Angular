@@ -1,0 +1,40 @@
+
+<div class="centered">
+    
+  <div *ngIf="!(user|async)?.uid">
+    <div class="loginCard">
+     <form #loginForm="ngForm">
+      <h1 >Login</h1>
+
+        <div class="err" *ngIf="errorMsg">
+            {{errorMsg}} 
+        </div>
+      <label class="label">Email</label>
+         <input 
+         type="email" name="email"
+         placeholder="Enter your email address" 
+         [(ngModel)]="email" class="formInput"
+         maxlength="60" required/>
+  
+      <label class="label">Password</label>
+        <input 
+          type="password" name="password"
+          placeholder="Enter password" 
+          [(ngModel)]="password" class="formInput" 
+          required/>
+  
+     
+  
+        <button [disabled]="!loginForm.form.valid" 
+                type="submit" (click)="login()"
+                class="btn" id="btn-login">
+                Login
+        </button>
+      </form>
+    </div>
+    </div>
+    <div *ngIf="(user|async)?.uid">
+      You are already logged in. Logout to login again.
+    </div>
+  
+</div>

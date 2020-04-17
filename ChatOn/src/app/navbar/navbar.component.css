@@ -1,0 +1,62 @@
+.navBar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(4, 3, 95);
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow:5px 5px 50px beige;
+}
+
+#logo{
+    display: inline-block;
+    background: url('../../assets/img/logo.png') no-repeat;
+    background-size: cover;
+    margin: 12px 10px 12px 32px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+}
+
+#heading{
+    flex: 4;
+    padding: 24px 0px 8px 10px;
+    height: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    color:#ff6600;
+}
+
+.links{
+    padding-top: 35px;
+    padding-right: 15px;
+    font-size: 22px;
+    white-space: nowrap;
+    display: block;
+}
+
+#heading > a{
+    text-decoration: none;
+    color: black;
+}
+
+.links a{
+    color: #ff6600;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+    padding: 2px 2px 2px 2px ;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: rgb(235, 188, 144);
+    transition: ease-in 0.2s;
+}
+
+#userEmail {
+    padding-right: 16px;
+    font-weight: bold;
+    color: #ff6600;
+}
